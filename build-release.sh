@@ -2,10 +2,7 @@ cd $1
 # Format
 rustfmt src/*.rs
 # Build
-cargo clean
-cargo check
-cargo fix
-cargo build --verbose
+cargo build --verbose --release
 cargo doc
 cd -
 
