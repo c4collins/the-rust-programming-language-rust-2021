@@ -5,6 +5,7 @@ rustfmt src/*.rs
 cargo clean
 cargo check
 cargo fix
+cargo doc --open
 cd -
 
 # TODO: write this in rust
