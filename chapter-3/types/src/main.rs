@@ -1,6 +1,4 @@
-fn main() {
-    // *********** Scalar types ******************* (single values)
-
+fn integer_types() {
     // Integers - a number without a fractional component
     let signed_8bit_min: i8 = std::i8::MIN;
     let signed_8bit_max: i8 = std::i8::MAX;
@@ -49,9 +47,10 @@ fn main() {
     println!("-> system archtecture (probably x64)");
     println!("Signed: {signed_sizebit_min} <-> {signed_sizebit_max}");
     println!("Unsigned: {unsigned_sizebit_min} <-> {unsigned_sizebit_max}");
+}
 
-    // Integer Literals - types are inferred from the definition
-
+fn integer_literals() {
+    // Integer Literals
     println!("-> Literals");
 
     let decimal = 98_222;
@@ -68,9 +67,10 @@ fn main() {
 
     let byte = b'A';
     println!("Byte: {byte} from b'A'");
+}
 
+fn floating_point() {
     // Floating point numbers
-
     let f32_min: f32 = std::f32::MIN;
     let f32_max: f32 = std::f32::MAX;
     let f64_min = std::f64::MIN; // f64 by default
@@ -78,6 +78,63 @@ fn main() {
     println!("-> Floating points");
     println!("f32: {f32_min} <-> {f32_max}");
     println!("f64: {f64_min} <-> {f64_max}");
+}
 
+fn numeric_operations() {
+    // Numeric Operations
+    println!("-> Numeric Operations");
+    let x = 17;
+    let y = 5;
+    // + Addition
+    let z = x + y;
+    println!("{x} + {y} = {z}");
+    // - Substraction
+    let z = x - y;
+    println!("{x} - {y} = {z}");
+    // * multiplication
+    let z = x * y;
+    println!("{x} * {y} = {z}");
+    // % modulo / remainder
+    let z = x % y;
+    println!("{x} % {y} = {z}");
+    // / division
+    let z = x / y;
+    println!("{x} / {y} = {z} (note that this is an integer and only correct in that context)");
+    // / division again
+    let x = 17.1;
+    let y = 5.2;
+    let z = x / y;
+    println!("{x} / {y} = {z}");
+}
+
+fn booleans() {
+    // Booleans
+    println!("-> boolean (bool)");
+    let t = true;
+    let f: bool = false; // that's a type
+    println!("true={t} and false={f}");
+}
+
+fn characters() {
+    // Characters
+    println!("-> characters (char) - Use single quote (') instead of double (\")");
+    let c = 'z';
+    let z: char = 'Z'; // that's a type
+    let heart_eyed_cat = '😻';
+    println!("{c} -> {z} -> {heart_eyed_cat}");
+}
+
+fn scalar_types() {
+    // *********** Scalar types ******************* (single values)
+    integer_types();
+    integer_literals();
+    floating_point();
+    numeric_operations();
+    booleans();
+    characters();
+}
+
+fn main() {
+    scalar_types();
     // **************** Compound types *******************
 }
