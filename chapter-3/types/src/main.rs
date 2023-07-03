@@ -134,7 +134,31 @@ fn scalar_types() {
     characters();
 }
 
+fn tuple() {
+    println!("-> tuples (fixed-length collection of varying types)");
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let (_x, y, _z) = tup;
+    println!("The value of y is {y}");
+    let first = tup.0;
+    println!("The first value is {first}");
+    println!("The unit tuple {{()}} is the default value for an empty expression or a function with no return value.  It's effectively void.");
+}
+
+fn array() {
+    println!("-> arrays (fixed-length collection of same type");
+    let a: [i32; 5] = [1, 2, 3, 4, 5];
+    let first = a[0];
+    let second = a[1];
+    println!("first element is {first} and second element is {second}");
+}
+
+fn compound_types() {
+    // **************** Compound types *******************
+    tuple();
+    array();
+}
+
 fn main() {
     scalar_types();
-    // **************** Compound types *******************
+    compound_types();
 }

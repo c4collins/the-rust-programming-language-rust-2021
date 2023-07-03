@@ -10,6 +10,7 @@ I've gone through the book before, a long while ago, and haven't don't enough Ru
 - 8 June 2023 - Initial Commit
 - 8 June 2023 - Chapter 1 Complete
 - 11 June 2023 - Chapter 2 Complete
+- 3 July 2023 - Chapter 3 Complete
 
 ## Usage
 
