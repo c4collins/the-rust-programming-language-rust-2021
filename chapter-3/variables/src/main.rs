@@ -1,6 +1,11 @@
-const THREE_HOUSR_IN_SECONDS: u32 = 60 * 60 * 3; // Constants must have type annotation
+const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3; // Constants must have type annotation
 
 fn main() {
+    println!(
+        "Three hours in seconds is {} seconds",
+        THREE_HOURS_IN_SECONDS
+    );
+
     // Mutability
     let mut x = 5;
     println!("The value of x is {x}!");
