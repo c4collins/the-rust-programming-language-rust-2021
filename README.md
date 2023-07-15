@@ -12,6 +12,7 @@ I've gone through the book before, a long while ago, and haven't don't enough Ru
 - 11 June 2023 - Chapter 2 Complete
 - 3 July 2023 - Chapter 3 Complete
 - 4 July 2023 - Chapter 4 Complete
+- 15 July 2023 - Chapter 5 Complete
 
 ## Usage
 
