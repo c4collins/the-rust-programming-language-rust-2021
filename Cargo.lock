@@ -13,6 +13,10 @@ name = "control_flow"
 version = "0.1.0"
 
 [[package]]
+name = "control_flow_match"
+version = "0.1.0"
+
+[[package]]
 name = "enums"
 version = "0.1.0"
 
@@ -40,6 +44,10 @@ dependencies = [
 
 [[package]]
 name = "hello_cargo"
+version = "0.1.0"
+
+[[package]]
+name = "if_let"
 version = "0.1.0"
 
 [[package]]
