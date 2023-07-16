@@ -13,6 +13,10 @@ name = "control_flow"
 version = "0.1.0"
 
 [[package]]
+name = "enums"
+version = "0.1.0"
+
+[[package]]
 name = "functions"
 version = "0.1.0"
 
