@@ -47,6 +47,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "hashmaps"
+version = "0.1.0"
+
+[[package]]
 name = "hello_cargo"
 version = "0.1.0"
 
@@ -120,6 +124,10 @@ name = "slice_type"
 version = "0.1.0"
 
 [[package]]
+name = "strings"
+version = "0.1.0"
+
+[[package]]
 name = "structures"
 version = "0.1.0"
 
@@ -129,6 +137,10 @@ version = "0.1.0"
 
 [[package]]
 name = "variables"
+version = "0.1.0"
+
+[[package]]
+name = "vectors"
 version = "0.1.0"
 
 [[package]]

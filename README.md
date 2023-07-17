@@ -15,10 +15,11 @@ I've gone through the book before, a long while ago, and haven't don't enough Ru
 - 15 July 2023 - Chapter 5 Complete
 - 16 July 2023 - Chapter 6 Complete
 - 16 July 2023 - Chapter 7 Complete
+- 17 July 2023 - Chapter 8 Complete
 
 ## Usage
 
-`./run.sh chapter-2/guessing_game/ guessing_game`
+`./run.sh chapter-2/guessing_game`
 
 - `build.sh` will do a development build & then run the project
     - `rustc.sh` is the same thing but without cargo
