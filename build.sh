@@ -5,9 +5,7 @@ rustfmt src/*.rs
 cargo clean
 cargo fix
 cargo build --verbose
+cargo run
 cd -
-
-# Run
-./$1/target/debug/$2
 
 # TODO: write this in rust

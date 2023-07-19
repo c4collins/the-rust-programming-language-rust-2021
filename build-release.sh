@@ -3,9 +3,7 @@ cd $1
 rustfmt src/*.rs
 # Build
 cargo build --verbose --release
+cargo run
 cd -
-
-# Run
-./$1/target/debug/$2
 
 # TODO: write this in rust
