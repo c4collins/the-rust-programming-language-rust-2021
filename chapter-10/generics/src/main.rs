@@ -1,11 +1,12 @@
 mod fn_and_impl;
+mod lifetimes;
 mod summaries;
-
 mod traits;
 
 fn main() {
     fn_and_impl::go();
     traits::go();
+    lifetimes::go();
 }
 
 // NOTE: I don't really have a good way or reason to implement this, but it's important
