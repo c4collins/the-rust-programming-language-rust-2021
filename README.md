@@ -22,7 +22,7 @@ https://doc.rust-lang.org/book/title-page.html
 
 ## Usage
 
-`./run.sh chapter-2/guessing_game`
+`./run.sh chapter_02-programming_a_guessing_game/guessing_game/`
 
 - `build.sh` will do a development build & then run the project
     - `rustc.sh` is the same thing but without cargo
