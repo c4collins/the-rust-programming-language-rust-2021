@@ -19,6 +19,7 @@ https://doc.rust-lang.org/book/title-page.html
 - 17 July 2023 - Chapter 8 Complete
 - 19 July 2023 - Chapter 9 Complete
 - 22 July 2023 - Chapter 10 Complete
+- 23 July 2023 - Chapter 11 Complete
 
 ## Usage
 
