@@ -23,11 +23,22 @@ https://doc.rust-lang.org/book/title-page.html
 
 ## Usage
 
-`./run.sh chapter_02-programming_a_guessing_game/guessing_game/`
+- in general: 
 
-- `build.sh` will do a development build & then run the project
-    - `rustc.sh` is the same thing but without cargo
-- `run.sh` will only build if necessary
-- `build-release.sh` will do a release build
-- `check.sh` will do a check without a build step
-- `test.sh` will format and test
+    `cargo run --bin minigrep`
+
+- with a script:  
+
+    `./run.sh chapter_02-programming_a_guessing_game/guessing_game/`
+
+    These were intended to be mostly references for the commands for various cases (especially the options in test.sh) but they're useful and usable.
+
+    [NOTE: I'd like to rewrite this all as one Rust program (maybe after Ch.12) but we'll see how it goes.]
+
+    - `build.sh` will do a development build & then run the project
+        - `rustc.sh` is the same thing but without cargo
+    - `run.sh` will only build if necessary
+    - `build-release.sh` will do a release build
+    - `check.sh` will do a check without a build step
+    - `test.sh` will format and test
+

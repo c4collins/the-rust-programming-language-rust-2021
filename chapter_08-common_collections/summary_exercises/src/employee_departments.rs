@@ -29,7 +29,7 @@ struct Department {
 
 use std::collections::HashMap;
 
-pub fn go() {
+pub fn run() {
     let mut departments: HashMap<DepartmentStyle, Department> = HashMap::new();
 
     println!("These are the registered departments:");

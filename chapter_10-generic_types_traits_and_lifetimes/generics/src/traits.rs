@@ -2,7 +2,7 @@ use crate::summaries::{
     notify, notify_without_sugar, returning_a_tweet, NewsArticle, Summary, Tweet,
 };
 
-pub fn go() {
+pub fn run() {
     let tweet = Tweet {
         username: String::from("c4collins"),
         content: String::from("of course, as you probably already know, people"),

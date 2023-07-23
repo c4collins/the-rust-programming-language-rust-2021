@@ -1,6 +1,6 @@
 use std::cmp::PartialOrd;
 
-pub fn go() {
+pub fn run() {
     find_the_largest_number_in_a_list();
 
     let number_list = vec![34, 50, 25, 100, 65];

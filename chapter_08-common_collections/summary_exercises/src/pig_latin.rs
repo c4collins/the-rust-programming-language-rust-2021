@@ -8,7 +8,7 @@ use std::collections::HashMap;
 
 const LETTERS: [char; 5] = ['a', 'e', 'i', 'o', 'u'];
 
-pub fn go() {
+pub fn run() {
     let text = "By signing up you agree to our terms of service and acknowledge that you have read and understand our privacy policy and code of conduct";
     let igpay_atinlay = one_line(String::from(text));
     println!("{text}");

@@ -1,6 +1,6 @@
 use std::fmt::Display;
 
-pub fn go() {
+pub fn run() {
     fixed_reference();
     which_string_is_longer();
     referenced_struct();

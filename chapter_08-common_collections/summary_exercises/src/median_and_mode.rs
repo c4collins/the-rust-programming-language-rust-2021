@@ -5,7 +5,7 @@
 
 use std::collections::HashMap;
 
-pub fn go(ints: [u8; 31]) {
+pub fn run(ints: [u8; 31]) {
     let ints = sort_array(ints);
     println!("{:?}", ints);
 
