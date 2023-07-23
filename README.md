@@ -29,3 +29,4 @@ https://doc.rust-lang.org/book/title-page.html
 - `run.sh` will only build if necessary
 - `build-release.sh` will do a release build
 - `check.sh` will do a check without a build step
+- `test.sh` will format and test
