@@ -1,6 +1,9 @@
+use std::env;
+
 pub struct Config {
     pub query: String,
     pub file_path: String,
+    pub ignore_case: bool,
 }
 
 impl Config {
@@ -18,7 +21,7 @@ impl Config {
     fn check_for_args_errors(args: &[String]) -> &'static str {
         if args.len() < 3 {
             "Not enough arguments"
-        } else if args.len() > 3 {
+        } else if args.len() > 5 {
             "Too many arguments"
         } else {
             "" // No errors, program may continue
@@ -30,7 +33,12 @@ impl Config {
 
         let query = args[1].clone();
         let file_path = format!("{}{}", parent_path, &args[2]);
+        let ignore_case = env::var("IGNORE_CASE").is_ok();
 
-        Config { query, file_path }
+        Config {
+            query,
+            file_path,
+            ignore_case,
+        }
     }
 }
