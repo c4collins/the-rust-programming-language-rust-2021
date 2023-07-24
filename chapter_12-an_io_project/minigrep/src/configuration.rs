@@ -19,9 +19,12 @@ impl Config {
     }
 
     fn check_for_args_errors(args: &[String]) -> &'static str {
-        if args.len() < 3 {
+        // path/to/file.rs look_for in_file_path [--case_insensitive]
+
+        let len = args.len();
+        if len < 3 {
             "Not enough arguments"
-        } else if args.len() > 5 {
+        } else if args.len() > 4 {
             "Too many arguments"
         } else {
             "" // No errors, program may continue
@@ -33,7 +36,15 @@ impl Config {
 
         let query = args[1].clone();
         let file_path = format!("{}{}", parent_path, &args[2]);
-        let ignore_case = env::var("IGNORE_CASE").is_ok();
+
+        let mut ignore_case = false;
+        if args.len() > 3 {
+            if args[3] == "--case_insensitive" {
+                ignore_case = true;
+            }
+        } else {
+            ignore_case = env::var("IGNORE_CASE").is_ok()
+        }
 
         Config {
             query,
