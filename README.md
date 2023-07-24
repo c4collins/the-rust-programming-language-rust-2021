@@ -32,28 +32,28 @@ https://doc.rust-lang.org/book/title-page.html
 
 ```mermaid 
 flowchart TD
-    0[Initial Commit] -- 08 June 2023 --> 1[Chapter 1: Getting Started]
-    1 -- 11 June 2023 --> 2[Chapter 2: Programming a Guessing Game]
-    2 -- 03 July 2023 --> 3[Chapter 3: Common Programming Concepts]
-    3 --> 2
-    3 -- 04 July 2023 --> 4[Chapter 4: Understanding Ownership]
-    4 --> 2
-    4 -- 15 July 2023 --> 5[Chapter 5: Using Structs to Structure Related Data]
-    5 -- 16 July 2023--> 6[Chapter 6: Enums and Pattern Matching]
-    6 -- 16 July 2023 --> 7[Chapter 7: Managing Growing Projec ts with Packages, Crates, and Modules]
-    7 -- 17 July 2023 --> 8[Chapter 8: Common Collections]
-    8 -- 19 July 2023 --> 9[Chapter 9: Error Handling]
-    9 -- 22 July 2023 --> 10[Chapter 10: Generic Types, Traits, and Lifetimes]
-    10 -- 23 July 2023 --> 11[Chapter 11: Writing Automated Tests]
-    11 -- 24 July 2023 --> 12[Chapter 12: An I/O Project: Building a Command Line Program]
-    2 --> 12
-    5 --> 12
-    6 --> 12
-    7 --> 12
-    8 --> 12
-    9 --> 12
-    10 --> 12
-    11 --> 12
-    12 -- 24 July 2023 --> 13[Chapter 13: Fucntional Language Features: Iterators and Closures]
-    13 --> 12
+    0>Initial Commit] == 08 June 2023 ==> 1[Chapter 1: Getting Started]
+    1 == 11 June 2023 ==> 2((Chapter 2: Programming a Guessing Game))
+    2 == 03 July 2023 ==> 3[Chapter 3: Common Programming Concepts]
+    3 -.-> 2
+    3 == 04 July 2023 ==> 4[Chapter 4: Understanding Ownership]
+    4 -.-> 2
+    4 == 15 July 2023 ==> 5[Chapter 5: Using Structs to Structure Related Data]
+    5 == 16 July 2023 ==> 6[Chapter 6: Enums and Pattern Matching]
+    6 == 16 July 2023 ==> 7[Chapter 7: Managing Growing Projec ts with Packages, Crates, and Modules]
+    7 == 17 July 2023 ==> 8[Chapter 8: Common Collections]
+    8 == 19 July 2023 ==> 9[Chapter 9: Error Handling]
+    9 == 22 July 2023 ==> 10[Chapter 10: Generic Types, Traits, and Lifetimes]
+    10 == 23 July 2023 ==> 11[Chapter 11: Writing Automated Tests]
+    11 == 24 July 2023 ==> 12((Chapter 12: An I/O Project: Building a Command Line Program))
+    2 -.-> 12
+    5 -.-> 12
+    6 -.-> 12
+    7 -.-> 12
+    8 -.-> 12
+    9 -.-> 12
+    10 -.-> 12
+    11 -.-> 12
+    12 == 24 July 2023 ==> 13[Chapter 13: Fucntional Language Features: Iterators and Closures]
+    13 -.-> 12
 ```
