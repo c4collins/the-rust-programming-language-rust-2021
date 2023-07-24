@@ -1,10 +1,10 @@
-struct Config {
-    query: String,
-    file_path: String,
+pub struct Config {
+    pub query: String,
+    pub file_path: String,
 }
 
 impl Config {
-    fn new(args: &[String]) -> Result<Config, &'static str> {
+    pub fn new(args: &[String]) -> Result<Config, &'static str> {
         if args.len() < 3 {
             return Err("Not enough arguments");
         }

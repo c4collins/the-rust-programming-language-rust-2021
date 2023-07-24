@@ -2,8 +2,6 @@ use std::{env, fs, process};
 
 mod configuration;
 
-use configuration;
-
 fn main() {
     let args: Vec<String> = env::args().collect();
     let config = configuration::Config::new(&args).unwrap_or_else(|err| {

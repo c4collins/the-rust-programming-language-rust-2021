@@ -1,3 +1,3 @@
-// use configuration;
+mod configuration;
 
-// pub fn run(config: configuration::Config) {}
+pub fn run(config: configuration::Config) {}
