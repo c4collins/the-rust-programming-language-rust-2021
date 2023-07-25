@@ -23,6 +23,8 @@ fn main() {
         "1" | "01" => c01_getting_started::run(),
         "2" | "02" => c02_programming_a_guessing_game::run(),
         "3" | "03" => c03_common_programming_concepts::run(),
+        "4" | "04" => c04_understanding_ownership::run(),
+        "5" | "05" => c05_using_structs_to_structure_data::run(),
         _ => println!("Invalid Option"),
     }
 }

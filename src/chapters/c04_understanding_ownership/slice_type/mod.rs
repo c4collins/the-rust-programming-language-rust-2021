@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     let hw = "Hello, world !";
     let first_word = get_first_word(&hw);
     println!("{first_word}");

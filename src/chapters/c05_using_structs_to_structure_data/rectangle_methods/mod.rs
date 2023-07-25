@@ -40,7 +40,7 @@ impl Rectangle {
 }
 // NOTE: there's no reason to use multiple impl blocks (here, at least); but there's nothing stopping it
 
-fn main() {
+pub fn main() {
     let rect = Rectangle {
         width: 30,
         height: 50,

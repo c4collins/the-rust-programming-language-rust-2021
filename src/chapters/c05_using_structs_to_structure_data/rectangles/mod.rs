@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     let unit: String = String::from("pixels");
 
     // Without any Structure

@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     hello_world();
     functions_and_ownership();
     borrowing();

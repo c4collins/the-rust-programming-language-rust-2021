@@ -5,7 +5,7 @@ struct User {
     sign_in_count: u64,
 }
 
-fn main() {
+pub fn main() {
     let user = build_user(
         String::from("connor@connomation.ca"),
         String::from("Connor"),
