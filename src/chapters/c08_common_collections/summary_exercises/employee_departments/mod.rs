@@ -39,8 +39,13 @@ pub fn run() {
         println!("\t - {:?}", style)
     }
 
+    let mut count: u8 = 0;
     loop {
+        count += 1;
         departments = handle_user_options(departments);
+        if count > 6 {
+            break; // just so it's not infinite in testing
+        }
     }
 }
 

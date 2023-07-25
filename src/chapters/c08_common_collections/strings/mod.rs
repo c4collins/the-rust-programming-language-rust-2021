@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     creating_a_string();
     updating_a_string();
     slicing_a_string();

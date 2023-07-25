@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     let _empty_vector: Vec<i32> = new_empty_vector();
     let _macro_vector = vector_from_macro();
 

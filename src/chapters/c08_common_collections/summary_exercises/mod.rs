@@ -4,7 +4,7 @@ mod pig_latin;
 
 use rand;
 
-fn main() {
+pub fn main() {
     let list_of_integers: [u8; 31] = rand::random();
     median_and_mode::run(list_of_integers);
     println!();

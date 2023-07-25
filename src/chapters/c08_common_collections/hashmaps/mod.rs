@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-fn main() {
+pub fn main() {
     let scores = creating_a_hashmap();
     accessing_a_hashmap(scores);
     let scores = creating_a_hashmap();
