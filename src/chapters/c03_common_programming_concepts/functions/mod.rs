@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     println!("Hello, world!");
     another_function(5, 'h');
     let five_val = five();

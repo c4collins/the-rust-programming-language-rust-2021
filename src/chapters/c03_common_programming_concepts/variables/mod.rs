@@ -1,6 +1,6 @@
 const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3; // Constants must have type annotation
 
-fn main() {
+pub fn main() {
     println!(
         "Three hours in seconds is {} seconds",
         THREE_HOURS_IN_SECONDS

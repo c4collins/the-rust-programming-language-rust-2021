@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     if_expressions();
     list_all_roots(if_let_expression(true));
     loops();

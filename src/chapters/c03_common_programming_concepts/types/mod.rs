@@ -158,7 +158,7 @@ fn compound_types() {
     array();
 }
 
-fn main() {
+pub fn main() {
     scalar_types();
     compound_types();
 }
