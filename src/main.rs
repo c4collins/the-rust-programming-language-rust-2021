@@ -21,6 +21,7 @@ fn main() {
 
     match chapter_num.trim() {
         "1" | "01" => c01_getting_started::run(),
+        "2" | "02" => c02_programming_a_guessing_game::run(),
         _ => println!("Invalid Option"),
     }
 }
