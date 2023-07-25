@@ -8,24 +8,10 @@ https://doc.rust-lang.org/book/title-page.html
 
 ## Usage
 
-- in general: 
-
-    `cargo run --bin minigrep`
-
-- with a script:  
-
-    `./run.sh chapter_02-programming_a_guessing_game/guessing_game/`
-
-    These were intended to be mostly references for the commands for various cases (especially the options in test.sh) but they're useful and usable.
-
-    [NOTE: I'd like to rewrite this all as one Rust program but we'll see how it goes.]
-
-    - `build.sh` will do a development build & then run the project
-        - `rustc.sh` is the same thing but without cargo
-    - `run.sh` will only build if necessary
-    - `build-release.sh` will do a release build
-    - `check.sh` will do a check without a build step
-    - `test.sh` will format and test
+1. `cargo run`
+2. It will ask you which chapter you want to see
+3. Enter a number 1-21 to get a response.
+4. **to end:** CTRL+C, or enter any string that won't parse to an 8-bit number (e.g. butts, 256, -1), or 0.
 
 
 ### Timeline Flowchart: 
@@ -80,3 +66,7 @@ flowchart TD
     12 == 25 July 2023 ==> 13[Chapter 13: Functional Language Features: Iterators and Closures]
     13 -.-> 12
 ```
+
+## Scripts
+
+I wrote the scripts to help me have references to the different cargo features, and I used them for a while, but then I got better at cargo/rust and didn't need them any more so they're just sort of for reference and don't have anything to do with the project any more.  This README file used to have instructions about them, so you could look that up in the commit history if you wanted to.
