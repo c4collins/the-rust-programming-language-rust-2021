@@ -1,7 +1,7 @@
 use std::thread;
 use std::time::Duration;
 
-fn main() {
+pub fn main() {
     store_giveaways();
     expensive_closures();
     example_closures();
