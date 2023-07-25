@@ -53,7 +53,10 @@ fn main() {
                     );
                     c12_an_io_project::run()
                 }
-                13 => c13_iterators_and_closures::run(),
+                13 => {
+                    c13_iterators_and_closures::run();
+                    println!("There are more things in this chapter but you need to run `cargo test` to see them!")
+                }
                 _ => println!(
                     "Invalid Option, Chapter {} is not in this program (yet?)",
                     chapter_num_input
