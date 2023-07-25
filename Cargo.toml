@@ -1,24 +1,8 @@
-[workspace]
-members = [
-    "rust-book",
-    "chapter_01-getting_started/hello_cargo",
-    "chapter_02-programming_a_guessing_game/*",
-    "chapter_03-common_programming_concepts/*",
-    "chapter_04-understanding_ownership/*",
-    "chapter_05-using_structs_to_structure_data/*",
-    "chapter_06-enums_and_pattern_matching/*",
-    "chapter_07-managing_growing_projects_with_packages_crates_and_modules/*",
-    "chapter_08-common_collections/*",
-    "chapter_09-error_handling/*",
-    "chapter_10-generic_types_traits_and_lifetimes/*",
-    "chapter_11-writing_automated_tests/*",
-    "chapter_12-an_io_project/*",
-    "chapter_13-iterators_and_closures/*",
-    # "chapter_14/*",
-    # "chapter_15/*",
-    # "chapter_16/*",
-    # "chapter_17/*",
-    # "chapter_18/*",
-    # "chapter_19/*",
-    # "chapter_20/*",
-]
+[package]
+name = "rust-book"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
