@@ -2,7 +2,7 @@ use std::{io, process};
 
 mod chapters;
 
-use chapters::{
+pub use chapters::{
     c01_getting_started, c02_programming_a_guessing_game, c03_common_programming_concepts,
     c04_understanding_ownership, c05_using_structs_to_structure_data,
     c06_enums_and_pattern_matching, c07_managing_growing_projects_with_packages_crates_and_modules,
