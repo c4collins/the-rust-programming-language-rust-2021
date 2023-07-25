@@ -47,7 +47,12 @@ fn main() {
                 11 => println!(
                     "This is a chapter about testing, so run `cargo test` instead of `cargo run`"
                 ),
-                12 => c12_an_io_project::run(),
+                12 => {
+                    println!(
+                        "If this fails run it like `cargo run -- to poem.txt --case_insensitive`"
+                    );
+                    c12_an_io_project::run()
+                }
                 13 => c13_iterators_and_closures::run(),
                 _ => println!(
                     "Invalid Option, Chapter {} is not in this program (yet?)",

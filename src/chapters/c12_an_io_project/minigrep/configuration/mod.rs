@@ -32,7 +32,7 @@ impl Config {
     }
 
     fn get_new_config(args: &[String]) -> Config {
-        let parent_path = "chapter_12-an_io_project/minigrep/";
+        let parent_path = "src/chapters/c12_an_io_project/minigrep/";
 
         let query = args[1].clone();
         let file_path = format!("{}{}", parent_path, &args[2]);
