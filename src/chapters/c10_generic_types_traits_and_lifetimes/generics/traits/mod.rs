@@ -1,4 +1,4 @@
-use crate::summaries::{
+use crate::c10_generic_types_traits_and_lifetimes::generics::summaries::{
     notify, notify_without_sugar, returning_a_tweet, NewsArticle, Summary, Tweet,
 };
 

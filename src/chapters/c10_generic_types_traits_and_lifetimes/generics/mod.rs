@@ -3,7 +3,7 @@ mod lifetimes;
 mod summaries;
 mod traits;
 
-fn main() {
+pub fn main() {
     fn_and_impl::run();
     traits::run();
     lifetimes::run();

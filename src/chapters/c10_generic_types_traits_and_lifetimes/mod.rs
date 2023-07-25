@@ -1,1 +1,5 @@
-pub fn run() {}
+mod generics;
+
+pub fn run() {
+    generics::main();
+}
