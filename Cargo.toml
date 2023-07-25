@@ -10,8 +10,3 @@ rand = "0.8.5"
 num = "0.4"
 strum = "0.25"
 strum_macros = "0.25"
-
-
-[lib]
-name = "adder"
-path = "src/chapters/c11_writing_automated_tests/adder/lib.rs"
