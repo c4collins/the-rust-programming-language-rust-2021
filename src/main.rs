@@ -14,17 +14,24 @@ fn main() {
     println!("hi");
 
     println!("Which chapter do you want to run?");
-    let mut chapter_num = String::new();
+    let mut chapter_num_input = String::new(); // TODO: chapter_num as guarded number
     io::stdin()
-        .read_line(&mut chapter_num)
+        .read_line(&mut chapter_num_input)
         .expect("Failed to read line");
+    let chapter_num = chapter_num_input.trim().parse::<u8>().unwrap_or(0);
 
-    match chapter_num.trim() {
-        "1" | "01" => c01_getting_started::run(),
-        "2" | "02" => c02_programming_a_guessing_game::run(),
-        "3" | "03" => c03_common_programming_concepts::run(),
-        "4" | "04" => c04_understanding_ownership::run(),
-        "5" | "05" => c05_using_structs_to_structure_data::run(),
-        _ => println!("Invalid Option"),
+    if chapter_num < 21 {
+        match chapter_num {
+            1 => c01_getting_started::run(),
+            2 => c02_programming_a_guessing_game::run(),
+            3 => c03_common_programming_concepts::run(),
+            4 => c04_understanding_ownership::run(),
+            5 => c05_using_structs_to_structure_data::run(),
+            6 => c06_enums_and_pattern_matching::run(),
+            _ => println!(
+                "Invalid Option, Chapter {} is not in this program (yet?)",
+                chapter_num_input
+            ),
+        }
     }
 }

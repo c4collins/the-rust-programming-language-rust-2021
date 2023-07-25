@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     println!("{:?} has a value of {}", Coin::Dime, coin_value(Coin::Dime));
     println!(
         "{:?} has a value of {}",
