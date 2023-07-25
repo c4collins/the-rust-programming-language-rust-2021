@@ -28,6 +28,7 @@ fn main() {
             4 => c04_understanding_ownership::run(),
             5 => c05_using_structs_to_structure_data::run(),
             6 => c06_enums_and_pattern_matching::run(),
+            7 => c07_managing_growing_projects_with_packages_crates_and_modules::run(),
             _ => println!(
                 "Invalid Option, Chapter {} is not in this program (yet?)",
                 chapter_num_input
