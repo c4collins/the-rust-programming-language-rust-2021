@@ -2,7 +2,7 @@ use std::error::Error;
 use std::fs::{self, File};
 use std::io::{self, ErrorKind, Read};
 
-fn main() -> Result<(), Box<dyn Error>> {
+pub fn main() -> Result<(), Box<dyn Error>> {
     // _burn();
     // _vec_too_small();
     // _open_file_that_does_not_exist();

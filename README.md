@@ -44,6 +44,7 @@ flowchart TD
     7 == 17 July 2023 ==> 8[Chapter 8: Common Collections]
     8 == 19 July 2023 ==> 9[Chapter 9: Error Handling]
     9 == 22 July 2023 ==> 10[Chapter 10: Generic Types, Traits, and Lifetimes]
+    9 -.-> 2
     10 == 23 July 2023 ==> 11[Chapter 11: Writing Automated Tests]
     11 == 24 July 2023 ==> 12((Chapter 12: An I/O Project: Building a Command Line Program))
     2 -.-> 12
