@@ -16,6 +16,7 @@ pub use chapters::{
     //c11_writing_automated_tests,
     c12_an_io_project,
     c13_iterators_and_closures,
+    c14_cargo_and_crates_io,
 };
 
 fn main() {
@@ -59,7 +60,8 @@ fn main() {
                     println!(
                         "NOTE: If this failed run it like `cargo run -- to poem.txt --case_insensitive`"
                     );
-                }
+                },
+                14 => c14_cargo_and_crates_io::run(),
                 _ => println!(
                     "NOTE: Invalid Option, Chapter {} is not in this program (yet?)",
                     chapter_num_input
