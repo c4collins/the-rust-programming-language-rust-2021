@@ -45,20 +45,23 @@ fn main() {
                 9 => c09_error_handling::run(),
                 10 => c10_generic_types_traits_and_lifetimes::run(),
                 11 => println!(
-                    "This is a chapter about testing, so run `cargo test` instead of `cargo run`"
+                    "NOTE: This is a chapter about testing, so run `cargo test` instead of `cargo run`"
                 ),
                 12 => {
                     println!(
-                        "If this fails run it like `cargo run -- to poem.txt --case_insensitive`"
+                        "NOTE: If this fails run it like `cargo run -- to poem.txt --case_insensitive`"
                     );
-                    c12_an_io_project::run()
+                    c12_an_io_project::run();
                 }
                 13 => {
                     c13_iterators_and_closures::run();
-                    println!("There are more things in this chapter but you need to run `cargo test` to see them!")
+                    println!("NOTE: There are more things in this chapter but you need to run `cargo test` to see them!");
+                    println!(
+                        "NOTE: If this failed run it like `cargo run -- to poem.txt --case_insensitive`"
+                    );
                 }
                 _ => println!(
-                    "Invalid Option, Chapter {} is not in this program (yet?)",
+                    "NOTE: Invalid Option, Chapter {} is not in this program (yet?)",
                     chapter_num_input
                 ),
             }
