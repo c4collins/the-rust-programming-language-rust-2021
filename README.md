@@ -71,6 +71,8 @@ flowchart TD
     13 --> P3((Minigrep Plus))
 
     13 == 26 July 2023 ==> 14[Chapter 14: More about Cargo and Crates.io]
+
+    14 == 27 July 2023 ==> 15[Chapter 15: Smart Pointers]
 ```
 
 ## Scripts

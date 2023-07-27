@@ -17,12 +17,13 @@ pub use chapters::{
     c12_an_io_project,
     c13_iterators_and_closures,
     c14_cargo_and_crates_io,
+    c15_smart_pointers,
 };
 
 fn main() {
     println!("Starting The Rust Programming Language program!");
     loop {
-        println!("Which chapter do you want to run?");
+        println!("\nWhich chapter do you want to run?");
 
         let mut chapter_num_input = String::new();
         io::stdin()
@@ -33,6 +34,8 @@ fn main() {
         let chapter_num: u8 = chapter_num_input.trim().parse::<u8>().unwrap_or(0);
 
         if chapter_num < 22 {
+            println!("");
+
             match chapter_num {
                 0 => process::exit(1),
                 1 => c01_getting_started::run(),
@@ -46,27 +49,29 @@ fn main() {
                 9 => c09_error_handling::run(),
                 10 => c10_generic_types_traits_and_lifetimes::run(),
                 11 => println!(
-                    "NOTE: This is a chapter about testing, so run `cargo test` instead of `cargo run`"
+                    "\nNOTE: This is a chapter about testing, so run `cargo test` instead of `cargo run`"
                 ),
                 12 => {
                     println!(
-                        "NOTE: If this fails run it like `cargo run -- to poem.txt --case_insensitive`"
+                        "\nNOTE: If this fails run it like `cargo run -- to poem.txt --case_insensitive`"
                     );
                     c12_an_io_project::run();
                 }
                 13 => {
                     c13_iterators_and_closures::run();
-                    println!("NOTE: There are more things in this chapter but you need to run `cargo test` to see them!");
+                    println!("\nNOTE: There are more things in this chapter but you need to run `cargo test` to see them!");
                     println!(
-                        "NOTE: If this failed run it like `cargo run -- to poem.txt --case_insensitive`"
+                        "\nNOTE: If this failed run it like `cargo run -- to poem.txt --case_insensitive`"
                     );
                 },
                 14 => c14_cargo_and_crates_io::run(),
+                15 => c15_smart_pointers::run(),
                 _ => println!(
-                    "NOTE: Invalid Option, Chapter {} is not in this program (yet?)",
+                    "\nNOTE: Invalid Option, Chapter {} is not in this program (yet?)",
                     chapter_num_input
                 ),
             }
+            println!("\nRan Chapter {}", chapter_num);
         }
     }
 }

@@ -12,3 +12,4 @@ pub mod c11_writing_automated_tests;
 pub mod c12_an_io_project;
 pub mod c13_iterators_and_closures;
 pub mod c14_cargo_and_crates_io;
+pub mod c15_smart_pointers;
