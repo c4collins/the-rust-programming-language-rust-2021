@@ -1,3 +1,8 @@
+//! Smart pointers are any type that implements DeRef and Drop
+//! Box<T> has a known size and point to data allocated on the heap
+//! Rc<T>/Weak<T> keeps track of the number of references, allowing for shared ownership
+//! RefCell<T> provides interior mutablilty to an otherwise immutable reference
+
 use std::cell::RefCell;
 use std::rc::{Rc, Weak};
 
@@ -15,6 +20,7 @@ use list::RefCountList::{Cons as RcCons, Nil as RcNil};
 use my_box::MyBox;
 use tree_graph::Node;
 
+// Runs the code for Chapter 15
 pub fn run() {
     boxed();
     cons_list();
@@ -29,16 +35,19 @@ pub fn run() {
     nodes();
 }
 
+// Simple example of Box<T>
 fn boxed() {
     let b = Box::new(5);
     println!("b = {}", b);
 }
 
+// Simple implementation of a cons list
 fn cons_list() {
     let list = Box::new(Cons(1, Box::new(Cons(2, Box::new(Cons(3, Box::new(Nil)))))));
     println!("{:?}", list);
 }
 
+// Example to show how references work in general
 fn check_references() {
     let x = 5;
     let y = &x;
@@ -47,6 +56,7 @@ fn check_references() {
     println!("x:{}, y:{}", x, y);
 }
 
+// Example to show how Box values differ from normal references (and how they don't)
 fn check_boxed_references() {
     let x = 5;
     let y = Box::new(x);
@@ -55,6 +65,7 @@ fn check_boxed_references() {
     println!("x:{}, y:{}", x, y);
 }
 
+// Example of implementing Deref on a custom type
 fn whats_my_box() {
     let x = 5;
     let y = MyBox::new(x);
@@ -63,15 +74,18 @@ fn whats_my_box() {
     println!("x:{}, y:{:?}", x, y);
 }
 
+// Say hello
 fn hello(name: &str) {
     println!("Hello, {}", name);
 }
 
+// Example showing how derefs are coerced by Rust
 fn deref_coercions() {
     let m = MyBox::new(String::from("Rust"));
     hello(&m);
 }
 
+// Example to show pointer lifetimes
 fn smart_pointer() {
     let c = CustomSmartPointer {
         data: String::from("my stuff"),
@@ -84,6 +98,7 @@ fn smart_pointer() {
     println!("CustomSmartPointer dropped before the end of this function");
 }
 
+// Example showing how Rc<T> can be used to share ownership safely
 fn rc_cons_list() {
     let a = Rc::new(RcCons(5, Rc::new(RcCons(10, Rc::new(RcNil)))));
     println!("\ncount after creating a = {}", Rc::strong_count(&a));
@@ -97,6 +112,7 @@ fn rc_cons_list() {
     println!("a:{:?}, b:{:?}", a, b);
 }
 
+// Example showing how RefCell<T> can bue used to provide inner mutability
 fn refcell_rc_cons_list() {
     let value = Rc::new(RefCell::new(5));
 
@@ -112,6 +128,7 @@ fn refcell_rc_cons_list() {
     println!("c after = {:?}", c);
 }
 
+// Example showing how to create a memory leak
 fn reference_cycles() {
     let a = Rc::new(CycleCons(5, RefCell::new(Rc::new(CycleNil))));
 
@@ -134,6 +151,7 @@ fn reference_cycles() {
     // println!("a next item = {:?}", a.tail()); // This will overflow the stack since there is a circular reference
 }
 
+// Example showing how to avoid a memory leak
 fn nodes() {
     let leaf = Rc::new(Node {
         value: 3,

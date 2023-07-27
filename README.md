@@ -68,7 +68,9 @@ flowchart TD
 
     12 == 25 July 2023 ==> 13[Chapter 13: Functional Language Features: Iterators and Closures]
     13 -.-> 12
+
     13 --> P3((Minigrep Plus))
+    P2 -.-> P3
 
     13 == 26 July 2023 ==> 14[Chapter 14: More about Cargo and Crates.io]
 
