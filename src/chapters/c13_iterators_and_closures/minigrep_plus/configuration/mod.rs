@@ -1,7 +1,5 @@
 use std::env;
 
-use num::traits::AsPrimitive;
-
 pub struct Config {
     pub query: String,
     pub file_path: String,

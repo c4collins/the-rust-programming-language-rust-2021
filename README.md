@@ -75,6 +75,7 @@ flowchart TD
     13 == 26 July 2023 ==> 14[Chapter 14: More about Cargo and Crates.io]
 
     14 == 27 July 2023 ==> 15[Chapter 15: Smart Pointers]
+    15 == 27 July 2023 ==> 16[Chapter 16: Fearless Concurrency]
 ```
 
 ## Scripts

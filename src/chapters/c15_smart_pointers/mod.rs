@@ -105,7 +105,7 @@ fn rc_cons_list() {
     let b = RcCons(3, Rc::clone(&a));
     println!("count after creating b = {}", Rc::strong_count(&a));
     {
-        let c = RcCons(4, Rc::clone(&a));
+        let _c = RcCons(4, Rc::clone(&a));
         println!("count after creating c = {}", Rc::strong_count(&a));
     }
     println!("count after c goes out of scope = {}", Rc::strong_count(&a));

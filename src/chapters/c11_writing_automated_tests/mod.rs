@@ -1,6 +1,16 @@
 mod guess;
 mod rectangle;
 
+pub fn run() {
+    add(1, 2);
+    add_two(1);
+    greeting("butts");
+    prints_and_returns_10(20);
+
+    let guess = guess::Guess::new(1);
+    println!("Guess was 1: {:?}", guess.value);
+}
+
 pub fn add(left: usize, right: usize) -> usize {
     left + right
 }

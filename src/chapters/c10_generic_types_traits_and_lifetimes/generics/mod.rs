@@ -7,6 +7,7 @@ pub fn main() {
     fn_and_impl::run();
     traits::run();
     lifetimes::run();
+    summaries::using_where(&4, &4);
 }
 
 // NOTE: I don't really have a good way or reason to implement this, but it's important

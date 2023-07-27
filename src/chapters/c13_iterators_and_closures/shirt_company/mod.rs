@@ -158,8 +158,8 @@ fn the_fn_traits() {
             },
         ];
 
-        let mut sort_operations: Vec<String> = vec![];
-        let value = String::from("by key called");
+        let mut _sort_operations: Vec<String> = vec![];
+        let _value = String::from("by key called");
 
         list.sort_by_key(|r| {
             // sort_operations.push(value); // NOTE: this is a very contrived example, but this line forces FnMut so this can't work
@@ -187,7 +187,7 @@ fn the_fn_traits() {
         let mut num_sort_operations = 0;
         list.sort_by_key(|r| {
             num_sort_operations += 1;
-            r.width
+            r.width + r.height
         });
         println!("{:#?}, sorted in {} operations", list, num_sort_operations);
     }
