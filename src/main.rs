@@ -20,6 +20,7 @@ pub use chapters::{
     c14_cargo_and_crates_io,
     c15_smart_pointers,
     c16_fearless_concurrency,
+    c17_object_orientation_in_rust,
 };
 
 #[derive(Debug)]
@@ -125,6 +126,11 @@ fn main() {
             String::from("Fearless Concurrency"),
             c16_fearless_concurrency::run,
         ),
+        Chapter::new(
+            17,
+            String::from("Object-Oriented Programming Features of Rust"),
+            c17_object_orientation_in_rust::run,
+        ),
     ];
 
     // println!("{:?}", chapters); // Debugging -- TODO: learn about logging in Rust
@@ -158,7 +164,7 @@ fn get_user_input() -> String {
     chapter_num_input
 }
 
-fn run_chapter(chapters: &[Chapter; 17], num: u8) {
+fn run_chapter(chapters: &[Chapter], num: u8) {
     let chapter = chapters
         .iter()
         .find(|ch| ch.number == num)

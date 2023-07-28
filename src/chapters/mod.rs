@@ -14,3 +14,4 @@ pub mod c13_iterators_and_closures;
 pub mod c14_cargo_and_crates_io;
 pub mod c15_smart_pointers;
 pub mod c16_fearless_concurrency;
+pub mod c17_object_orientation_in_rust;

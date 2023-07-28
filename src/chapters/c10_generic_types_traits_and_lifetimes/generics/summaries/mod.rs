@@ -1,8 +1,10 @@
 use std::fmt::{Debug, Display, Formatter, Result};
 
 pub trait Summary {
+    // This trait method has signature but no default implementation
     fn summarize_author(&self) -> String;
 
+    // This trait method has an overrideable default (the signature is permanent)
     fn summarize(&self) -> String {
         format!("(Read more from {}...)", self.summarize_author())
     }
