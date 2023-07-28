@@ -34,7 +34,7 @@ flowchart TD
     13 == 26 July 2023 ==> 14[Chapter 14: More about Cargo and Crates.io]
     14 == 27 July 2023 ==> 15[Chapter 15: Smart Pointers]
     15 == 27 July 2023 ==> 16[Chapter 16: Fearless Concurrency]
-    16 == TBD ==> 17[Chapter 17: Object-Oriented Programming Features of Rust]
+    16 == 28 July 2023 ==> 17[Chapter 17: Object-Oriented Programming Features of Rust]
     17 == TBD ==> 18[Chapter 18: Patterns and Matching]
     18 == TBD ==> 19[Chapter 19: Advanced Features]
     19 == TBD ==> 20[Chapter 20: Final Project: Building a Multi-threaded Web Server]
