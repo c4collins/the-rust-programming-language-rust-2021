@@ -2,26 +2,7 @@ use std::{io, process};
 
 mod chapters;
 
-pub use chapters::{
-    // This comment makes rustfmt work how I want it to
-    c01_getting_started,
-    c02_programming_a_guessing_game,
-    c03_common_programming_concepts,
-    c04_understanding_ownership,
-    c05_using_structs_to_structure_data,
-    c06_enums_and_pattern_matching,
-    c07_managing_growing_projects_with_packages_crates_and_modules,
-    c08_common_collections,
-    c09_error_handling,
-    c10_generic_types_traits_and_lifetimes,
-    c11_writing_automated_tests,
-    c12_an_io_project,
-    c13_iterators_and_closures,
-    c14_cargo_and_crates_io,
-    c15_smart_pointers,
-    c16_fearless_concurrency,
-    c17_object_orientation_in_rust,
-};
+pub use chapters::*;
 
 #[derive(Debug)]
 struct Chapter {
@@ -130,6 +111,16 @@ fn main() {
             17,
             String::from("Object-Oriented Programming Features of Rust"),
             c17_object_orientation_in_rust::run,
+        ),
+        Chapter::new(
+            18,
+            String::from("Patterns and Matching"),
+            c18_patterns_and_matching::run,
+        ),
+        Chapter::new(
+            19,
+            String::from("Advanced Features"),
+            c19_advanced_features::run,
         ),
     ];
 
