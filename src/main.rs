@@ -122,6 +122,11 @@ fn main() {
             String::from("Advanced Features"),
             c19_advanced_features::run,
         ),
+        Chapter::new(
+            20,
+            String::from("Final Project: Building a Multithreaded Web Server"),
+            c20_multithreaded_web_server::run,
+        ),
     ];
 
     // println!("{:?}", chapters); // Debugging -- TODO: learn about logging in Rust
