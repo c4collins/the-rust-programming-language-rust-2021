@@ -37,22 +37,13 @@ flowchart TD
     16 == 28 July 2023 ==> 17[Chapter 17: Object-Oriented Programming Features of Rust]
     17 == 29 July 2023 ==> 18[Chapter 18: Patterns and Matching]
     18 == 29 July 2023 ==> 19[Chapter 19: Advanced Features]
-    19 == TBD ==> 20[Chapter 20: Final Project: Building a Multi-threaded Web Server]
-    20 == TBD ==> 21[Chapter 21:Appendix]
-
-    21 -- TBD --> A[A. Keywords]
-    21 -- TBD --> B[B. Operators and Symbols]
-    21 -- TBD --> C[C. Derivable Traits]
-    21 -- TBD --> D[D. Useful Development Tools]
-    21 -- TBD --> E[E. Editions]
-    21 -- TBD --> F[F. Translations of the Book]
-    21 -- TBD --> G[G. How Rust Is Made and 'Nightly Rust']
+    19 == 31 July 2023 ==> 20[Chapter 20: Final Project: Building a Multi-threaded Web Server]
 
     2 -- 11 June 2023 --> P1((Guessing Game))
     12 -- 24 July 2023 --> P2((Minigrep))
     13 -- 25 July 2023 --> P3((Minigrep Plus))
     P2 -.-> P3
-    20 -- TBD --> P4((Web Server))
+    20 -- 31 July 2023 --> P4((Web Server))
 ```
 
 ## Scripts
